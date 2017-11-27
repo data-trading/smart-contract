@@ -34,7 +34,7 @@ contract DataTradingToken is owned, ERC20Interface {
     string public constant name = "DataTradingToken";
     uint256 private _totalSupply;
     uint8 public constant decimals = 18;
-    uint256 private _unmintedTokens = 360000000*10^decimals;
+    uint256 private _unmintedTokens = 360000000*10**decimals;
     
     mapping(address => uint256) balances;
     mapping (address => mapping (address => uint256)) internal allowed;
